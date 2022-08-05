@@ -1,0 +1,10 @@
+before_script:
+  - docker login -u "$CI_DEPENDENCY_PROXY_USER" -p "$CI_DEPENDENCY_PROXY_PASSWORD" "$CI_DEPENDENCY_PROXY_SERVER" || true
+
+# File sourced from the GitLab template collection
+include:
+  - template: Auto-DevOps.gitlab-ci.yml
+  - local: .gitlab/ci/*.gitlab-ci.yml
+
+variables:
+  BUILDPACK_URL: https://github.com/heroku/heroku-buildpack-php
