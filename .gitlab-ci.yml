@@ -8,3 +8,4 @@ include:
 
 variables:
   BUILDPACK_URL: https://github.com/heroku/heroku-buildpack-php
+  APP_KEY: base64:wxSa6Ca43cqDEbqPVlnWdhGz6ih36cwr9+la9MF1P8g=
