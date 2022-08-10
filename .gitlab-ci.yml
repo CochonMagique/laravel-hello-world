@@ -1,0 +1,7 @@
+include:
+  - template: Auto-DevOps.gitlab-ci.yml
+  - local: .gitlab/ci/*.gitlab-ci.yml
+
+variables:
+  TEST_DISABLED: 'true'
+  APP_KEY: base64:wxSa6Ca43cqDEbqPVlnWdhGz6ih36cwr9+la9MF1P8g=
