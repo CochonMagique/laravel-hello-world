@@ -1,0 +1,4 @@
+apiVersion: v2
+description: Laravel chart for Gridky
+name: laravel
+version: 0.1.0
