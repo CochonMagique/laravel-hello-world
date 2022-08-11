@@ -42,7 +42,7 @@ spec:
         tier: database
     spec:
       containers:
-        - image: mariadb:10.9
+        - image: mariadb:10.8
           name: mariadb
           env:
             - name: MYSQL_RANDOM_ROOT_PASSWORD
