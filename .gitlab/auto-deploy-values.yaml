@@ -1,0 +1,10 @@
+application:
+  migrateCommand: php artisan migrate
+  initContainerCommand: php artisan db:rebuild
+
+ingress:
+  annotations:
+    certmanager.k8s.io/cluster-issuer: "letsencrypt-prod"
+
+prometheus:
+  metrics: true
