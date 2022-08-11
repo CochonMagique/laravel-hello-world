@@ -3,5 +3,6 @@ include:
   - local: .gitlab/ci/*.gitlab-ci.yml
 
 variables:
-  TEST_DISABLED: 'true'
+  TEST_DISABLED: "true"
+  POSTGRES_ENABLED: "false"
   APP_KEY: base64:wxSa6Ca43cqDEbqPVlnWdhGz6ih36cwr9+la9MF1P8g=
