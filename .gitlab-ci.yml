@@ -4,6 +4,7 @@ include:
 
 variables:
   AUTO_DEVOPS_CHART: ".chart"
+  AUTO_DEVOPS_BUILD_IMAGE_EXTRA_ARGS: "--build-arg=WWWGROUP=1000 --build-arg=WWWUSER=1000"
   DOCKERFILE_PATH: ".docker/8.1/Dockerfile"
   TEST_DISABLED: "true"
   POSTGRES_ENABLED: "false"
