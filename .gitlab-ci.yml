@@ -3,6 +3,8 @@ include:
   - local: .gitlab/ci/*.gitlab-ci.yml
 
 variables:
+  AUTO_DEVOPS_CHART: ".chart"
+  DOCKERFILE_PATH: ".docker/8.1/Dockerfile"
   TEST_DISABLED: "true"
   POSTGRES_ENABLED: "false"
   APP_KEY: base64:wxSa6Ca43cqDEbqPVlnWdhGz6ih36cwr9+la9MF1P8g=
