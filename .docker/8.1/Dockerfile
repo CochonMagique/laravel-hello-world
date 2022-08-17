@@ -34,7 +34,8 @@ ENV LC_ALL en_US.UTF-8
 # Install PHP Extensions
 RUN docker-php-ext-install \
     bz2 \
-    zip
+    zip \
+    pdo_mysql
 
 # Configure apache2
 RUN a2enmod rewrite
