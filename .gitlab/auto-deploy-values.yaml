@@ -1,6 +1,6 @@
 application:
   migrateCommand: php artisan migrate
-  initContainerCommand: php artisan db:rebuild
+  initContainerCommand: php artisan migrate --seed
 
 ingress:
   annotations:
