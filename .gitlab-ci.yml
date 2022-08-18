@@ -3,5 +3,9 @@ include:
   - local: .gitlab/ci/*.gitlab-ci.yml
 
 variables:
-  TEST_DISABLED: 'true'
+  AUTO_DEVOPS_CHART: ".chart"
+  AUTO_DEVOPS_BUILD_IMAGE_EXTRA_ARGS: "--build-arg=WWWGROUP=1000 --build-arg=WWWUSER=1000"
+  DOCKERFILE_PATH: ".docker/8.1/Dockerfile"
+  TEST_DISABLED: "true"
+  POSTGRES_ENABLED: "false"
   APP_KEY: base64:wxSa6Ca43cqDEbqPVlnWdhGz6ih36cwr9+la9MF1P8g=

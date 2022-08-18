@@ -1,0 +1,10 @@
+application:
+  migrateCommand: php artisan migrate
+  initContainerCommand: php artisan migrate --seed
+
+ingress:
+  annotations:
+    cert-manager.io/cluster-issuer: letsencrypt-production
+
+prometheus:
+  metrics: true
