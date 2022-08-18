@@ -4,7 +4,7 @@ application:
 
 ingress:
   annotations:
-    certmanager.k8s.io/cluster-issuer: letsencrypt-production
+    cert-manager.io/cluster-issuer: letsencrypt-production
 
 prometheus:
   metrics: true
