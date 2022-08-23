@@ -18,10 +18,11 @@ RUN mkdir -p ~/.gnupg \
     && chmod 600 ~/.gnupg \
     && echo "disable-ipv6" >> ~/.gnupg/dirmngr.conf \
     && php -r "readfile('http://getcomposer.org/installer');" | php -- --install-dir=/usr/bin/ --filename=composer \
-    && apt-get update \
-    && apt-get install -y --no-install-recommends locales net-tools libbz2-dev libzip-dev \
-    && apt-get -y autoremove \
-    && apt-get clean \
+    && apt update \
+    && apt install -y --no-install-recommends locales net-tools libbz2-dev libzip-dev \
+    && apt dist-upgrade -y \
+    && apt -y autoremove \
+    && apt clean \
     && rm -rf /var/lib/apt/lists/* /tmp/* /var/tmp/*
 
 # Setup locale
