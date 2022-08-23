@@ -1,0 +1,16 @@
+.chart
+.env
+.git
+.gitlab
+.hooks
+.idea
+coverage
+node_modules
+storage/*.key
+storage/debugbar
+storage/framework/cache/**
+storage/framework/sessions/**
+storage/framework/testing/**
+storage/framework/views/**
+storage/logs/**
+vendor
